@@ -1,0 +1,70 @@
+[Default Applications]
+# Web Browser
+x-scheme-handler/http=zen-browser.desktop
+x-scheme-handler/https=zen-browser.desktop
+x-scheme-handler/about=zen-browser.desktop
+x-scheme-handler/unknown=zen-browser.desktop
+
+# Email
+x-scheme-handler/mailto=mailspring.desktop
+
+# File Manager (Yazi in Kitty)
+inode/directory=yazi.desktop
+
+# Terminal
+x-scheme-handler/terminal=kitty.desktop
+
+# Text Files
+text/plain=vim.desktop
+
+# PDFs (Opened in Zen Browser)
+application/pdf=zen-browser.desktop
+
+# Images
+image/jpeg=feh.desktop
+image/png=feh.desktop
+image/gif=feh.desktop
+image/webp=feh.desktop
+image/bmp=feh.desktop
+image/svg+xml=feh.desktop
+
+# Videos
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+video/webm=mpv.desktop
+video/x-msvideo=mpv.desktop
+video/x-flv=mpv.desktop
+
+# Music & Audio
+audio/mpeg=mpv.desktop
+audio/x-wav=mpv.desktop
+audio/flac=mpv.desktop
+audio/x-vorbis+ogg=mpv.desktop
+
+# Archives
+application/zip=file-roller.desktop
+application/x-tar=file-roller.desktop
+application/gzip=file-roller.desktop
+application/x-7z-compressed=file-roller.desktop
+application/x-rar=file-roller.desktop
+
+# Office Documents
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop
+application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop
+
+# Code Files (VS Code)
+text/x-c=code.desktop
+text/x-c++=code.desktop
+text/x-python=code.desktop
+text/javascript=code.desktop
+text/html=code.desktop
+text/css=code.desktop
+x-scheme-handler/mailspring=Mailspring.desktop
+
+[Added Associations]
+# Extra associations
+text/plain=vim.desktop;nvim.desktop;
+application/pdf=zen-browser.desktop;evince.desktop;
+image/jpeg=feh.desktop;gwenview.desktop;
+
