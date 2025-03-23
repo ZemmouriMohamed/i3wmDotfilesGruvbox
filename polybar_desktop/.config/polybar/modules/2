@@ -1,0 +1,7 @@
+[module/powerprofiles]
+type = custom/script
+;exec = powerprofilesctl get | awk '{print $NF}'
+exec = bash -c 'profile=$(powerprofilesctl get | awk '\''{print $NF}'\''); case "$profile" in power-saver) echo "%{F#55ff55}%{F-} " ;; balanced) echo "%{F#ff5555} %{F-}" ;; performance) echo "%{F#ffcc00}%{F-}" ;; *) echo "$profile" ;; esac'
+interval = 0.1
+click-left = ~/.config/polybar/scripts/cycle_powerprofile.sh
+label = %output%
